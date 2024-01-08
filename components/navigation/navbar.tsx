@@ -90,7 +90,7 @@ const Navbar = () => {
                             <Link href={"mailto:obaidgases@gmail.com"}> <Mail scale={2} /> </Link>
                         </div>
                         <div className="py-4">
-                            <Link href="/"> <Image src={logo} alt="Obaid Gases LLC Logo" height={75} width={205} className="cursor-pointer dark:text-white" priority/> </Link>
+                            <Link href="/" onClick={handleNav}> <Image src={logo} alt="Obaid Gases LLC Logo" height={75} width={205} className="cursor-pointer dark:text-white" priority/> </Link>
                         </div>
                     </div>
                 </div>
