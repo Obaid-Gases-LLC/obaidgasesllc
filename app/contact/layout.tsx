@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function ContactLayout({ children } : { children: React.ReactNode}) {
     return ( 
-        <div className='px-4 2xl:px-16'>
+        <div>
             {children}
         </div>
     )

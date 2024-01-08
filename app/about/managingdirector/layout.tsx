@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Obaid Gases LLC | About',
+    title: 'Obaid Gases LLC | About | Managing Director',
     description: '',
 }
 
 export default function AboutLayout({ children } : { children: React.ReactNode}) {
     return ( 
-        <div className='px-4 2xl:px-16'>
+        <div>
             {children}
         </div>
     )

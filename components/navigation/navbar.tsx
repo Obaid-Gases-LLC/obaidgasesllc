@@ -9,7 +9,7 @@ import { useState } from "react";
 import { Facebook, Instagram, Linkedin, Mail, MapIcon } from "lucide-react";
 import { Button } from "@ui/button";
 import { SiLinktree, SiWhatsapp } from "react-icons/si";
-
+import { AboutToggle } from "@components/about-toggle";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,7 @@ const Navbar = () => {
                 <div className="hidden sm:flex">
                     <ul className="flex items-center mr-2">
                         <li className="p-2 hover:text-blue-500"> <Link href={'/'}>Home</Link> </li>
-                        <li className="p-2 hover:text-blue-500"> <Link href={'/about'}>About</Link> </li>
+                        <li className="p-2 hover:text-blue-500"> <AboutToggle /> </li>
                         <li className="p-2 hover:text-blue-500"> <Link href={'/products'}>Products</Link> </li>
                         <li className="p-2 hover:text-blue-500"> <Link href={'/faq'}>FAQ</Link> </li>
                         <li className="p-2 hover:text-blue-500"> <Link href={'/contact'}>Contact</Link> </li>
@@ -50,7 +50,7 @@ const Navbar = () => {
                     <div className="flex-col">
                         <ul>
                             <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <Link href={'/'}>Home</Link> </li>
-                            <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <Link href={'/about'}>About</Link> </li>
+                            <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> About </li>
                             <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <Link href={'/products'}>Products</Link> </li>
                             <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <Link href={'/faq'}>FAQ</Link> </li>
                             <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <Link href={'/contact'}>Contact</Link> </li>
