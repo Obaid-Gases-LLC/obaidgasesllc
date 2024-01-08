@@ -50,7 +50,7 @@ const Navbar = () => {
                     <div className="flex-col">
                         <ul>
                             <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <Link href={'/'}>Home</Link> </li>
-                            <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <AboutToggle /> </li>
+                            <li className="py-2 hover:text-blue-500"> <AboutToggle /> </li>
                             <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <Link href={'/products'}>Products</Link> </li>
                             <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <Link href={'/faq'}>FAQ</Link> </li>
                             <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <Link href={'/contact'}>Contact</Link> </li>
