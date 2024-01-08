@@ -10,12 +10,18 @@ import { Facebook, Instagram, Linkedin, Mail, MapIcon } from "lucide-react";
 import { Button } from "@ui/button";
 import { SiLinktree, SiWhatsapp } from "react-icons/si";
 import { AboutToggle } from "@components/about-toggle";
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator } from "@components/ui/dropdown-menu";
+
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [aboutOpen, setAboutOpen] = useState(false);
     const handleNav = () => {
         setIsOpen(!isOpen);
     }
+    const handleAbout = () => {
+        setAboutOpen(!aboutOpen);
+        }
 
     return (  
         <nav className="fixed w-full h-24 shadow-xl z-[999] dark:bg-black bg-white">
@@ -50,7 +56,23 @@ const Navbar = () => {
                     <div className="flex-col">
                         <ul>
                             <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <Link href={'/'}>Home</Link> </li>
-                            <li className="py-2 hover:text-blue-500"> <AboutToggle /> </li>
+                            <li className="py-2 hover:text-blue-500"> 
+                                <DropdownMenu open={aboutOpen}>
+                                    <DropdownMenuTrigger asChild>
+                                        <div onClick={handleAbout} className="cursor-pointer">About</div>
+                                    </DropdownMenuTrigger>
+                                    <DropdownMenuContent className="z-[1000]">
+                                        <DropdownMenuLabel> About Us </DropdownMenuLabel>
+                                        <DropdownMenuSeparator />
+                                        <DropdownMenuItem onClick={handleNav}>
+                                            <Link href={'/about/obaidgasesllc'} onClick={handleAbout}>About Obaid Gases LLC</Link>
+                                        </DropdownMenuItem>
+                                        <DropdownMenuItem onClick={handleNav}>
+                                            <Link href={'/about/managingdirector'} onClick={handleAbout}>About Managing Director</Link>
+                                        </DropdownMenuItem>
+                                    </DropdownMenuContent>
+                                </DropdownMenu>
+                            </li>
                             <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <Link href={'/products'}>Products</Link> </li>
                             <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <Link href={'/faq'}>FAQ</Link> </li>
                             <li className="py-2 hover:text-blue-500" onClick={() => setIsOpen(!isOpen)}> <Link href={'/contact'}>Contact</Link> </li>

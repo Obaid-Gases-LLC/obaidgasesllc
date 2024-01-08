@@ -9,11 +9,11 @@ export default function Home() {
                 <p>We are pioneers in the direct marketing since 2018 and we are very much</p>
                 <p> aware about the potentiality of its distribution in this country.</p>
             </div>
-            <div className='p-5'>
+            <div className='sm:p-5 mt-10'>
                 <div>
                     <h2 className='flex items-center justify-center text-3xl mb-10 font-bold'>About Us</h2>
                     <div className='flex flex-col sm:flex-row'>
-                        <div className='sm:w-1/2 w-full p-6'>
+                        <div className='sm:w-1/2 w-full sm:p-6 p-2'>
                             <h2 className='font-bold text-xl'>Obaid Gases LLC</h2>
                             <div>
                                 <p className='py-3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obaid Gases LLC is a leading force in the industrial gases sector, specializing in top-tier air products and cutting-edge equipment. Our commitment to excellence is evident in the quality and purity of our diverse range of industrial gases, including oxygen, nitrogen, argon, and helium. With state-of-the-art facilities adhering to international standards, we prioritize stringent quality control and safety measures to surpass customer expectations.</p>
