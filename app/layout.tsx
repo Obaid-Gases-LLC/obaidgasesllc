@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@components/theme-provider'
 import Navbar from '@components/navigation/navbar'
+import Footer from '@components/footer/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,10 +18,13 @@ export default function RootLayout({ children } : { children: React.ReactNode })
             <body className={inter.className}>
                 <ThemeProvider attribute='class' enableSystem>
                     <div className='h-28'>
-                        <Navbar/>
+                        <Navbar />
                     </div>
-                    <div className='px-8 2xl:px-32'>
+                    <div className='px-8 2xl:px-32 shadow-xl'>
                         {children}
+                    </div>
+                    <div className='dark:gb-black'>
+                        <Footer />
                     </div>
                 </ThemeProvider>
             </body>
