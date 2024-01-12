@@ -8,53 +8,53 @@ const Products = () => {
             pid: 1,
             pName: "Dry Ice",
             pImage: "/dryice.png",
-            pdescription: "Dry ice is the solid form of carbon dioxide. It is used primarily as a cooling agent. Its advantages include lower temperature than that of water ice and not leaving any residue (other than incidental frost from moisture in the atmosphere). It is useful for preserving frozen foods where mechanical cooling is unavailable.",
+            pdescription: "Dry ice is the solid form of carbon dioxide. Its used to have fogging effect in food industry.",
         },{
             pid: 2,
             pName: "Liquid Nitrogen",
             pImage: "/liquidnitrogen.png",
-            pdescription: "Liquid nitrogen is a cryogenic fluid that can cause rapid freezing on contact with living tissue. When appropriately insulated from ambient heat, liquid nitrogen can be stored and transported, for example in vacuum flasks. The temperature is held constant at 77 K by slow boiling of the liquid, resulting in the evolution of nitrogen gas. Depending on the size and design, the holding time of vacuum flasks ranges from a few hours to a few weeks.",
+            pdescription: "Liquid nitrogen is the liquid form of nitrogen. It is used in various industries.",
         },{
             pid: 3,
             pName: "Nitrogen Gas",
             pImage: "/nitrogengas.png",
-            pdescription: "Nitrogen Gas"
+            pdescription: "Nitrogen gas is gasious form of nitrogen. It is used in various industries."
         },{
             pid: 4,
             pName: "Helium Gas",
             pImage: "/heliumgas.png",
-            pdescription: "Helium Gas"
+            pdescription: "Helium gas is gasious form of helium. It is used to fill balloons."
         },{
             pid: 5,
             pName: "Carbondioxide Gas",
             pImage: "/carbondioxidegas.png",
-            pdescription: "Carbondioxide Gas"
+            pdescription: "Carbondioxide gas is gasious form of carbondioxide. It is used in various industries."
         },{
             pid: 6,
             pName: "Argon Gas",
             pImage: "/argongas.png",
-            pdescription: "Argon Gas"
+            pdescription: "Argon gas is gasious form of argon. It is used in various industries."
         },{
             pid: 7,
             pName: "Acetylene Gas",
             pImage: "/acetylenegas.png",
-            pdescription: "Acetylene Gas"
+            pdescription: "Acetylene gas is gasious form of acetylene. It is used in various industries."
         },{
             pid: 8,
             pName: "Oxygen Gas",
             pImage: "/oxygengas.png",
-            pdescription: "Oxygen Gas"
+            pdescription: "Oxygen gas is gasious form of oxygen. It is mainly used in medical industry."
         },{
             pid: 9,
             pName: "Nitrogen Mix Gas",
             pImage: "/mixgas.png",
-            pdescription: "Mix Gas"
+            pdescription: "Mix gas is gasious form of nitrogen. It is used in various industries."
         }
     ]
 
     return (  
         <div className="flex flex-col">
-            <div className="h-[220px] flex-row">
+            <div className="h-[260px] flex-row">
                 <div className='flex justify-center items-left flex-col p-4 font-bold text-4xl'>
                     <p>Product</p>
                 </div>
@@ -73,7 +73,7 @@ const Products = () => {
                             <CardContent>
                                 <div className="flex flex-col">
                                     <p className="text-sm">{product.pdescription}</p>
-                                    <Image src={product.pImage} alt={product.pName} height={150} width={150} />
+                                    {/* <Image src={product.pImage} alt={product.pName} height={150} width={150} /> */}
                                 </div>
                             </CardContent>
                             <CardFooter>
