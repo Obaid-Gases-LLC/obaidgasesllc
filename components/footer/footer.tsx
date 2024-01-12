@@ -11,7 +11,7 @@ const Footer = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                 <div className="p-3">
                     <h1 className='font-bold text-2xl'>Obaid Gases LLC</h1>
-                    <p className='text-sm'>Obaid Gases LLC is a leading supplier of industrial, medical and specialty gases in the United Arab Emirates.</p>
+                    <p className='text-sm p-2'>Obaid Gases LLC is a leading supplier of industrial, medical and specialty gases in the United Arab Emirates.</p>
                 </div>
                 <div className="p-3">
                     <h1 className="font-bold text-2xl">Safety Guide</h1>
