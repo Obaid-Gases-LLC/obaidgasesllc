@@ -1,14 +1,20 @@
 import { Separator } from "@components/ui/separator";
 import { Mail, PhoneCall } from "lucide-react";
+import aboutus from "@public/about-us.png";
+import Image from "next/image";
 import Link from "next/link";
 
 const About = () => {
     return (  
         <div className="flex flex-col">
-            <div className=''>
-                <span className='h-[220px] flex justify-center items-left flex-col p-4 font-bold text-4xl'>About Us</span>
-                <div className='p-4 font-bold text-xl w-full bg-slate-200 dark:bg-slate-500'>
-                    <span className="text-red-700 dark:text-red-400">Home / About Us</span> / Managing Director(MD)</div>
+            <div className='h-[220px] flex-row'>
+                <div className='flex justify-center items-left flex-col p-4 font-bold text-4xl'>
+                    <p>About Us</p>
+                </div>
+                <Image src={aboutus} alt="About Us" height={200} />
+            </div>
+            <div className='p-4 font-bold text-xl w-full bg-slate-200 dark:bg-slate-500'>
+                <span className="text-red-700 dark:text-red-400">Home / About Us</span> / Managing Director(MD)
             </div>
             <div className='sm:p-5'>
                 <div className='flex flex-col sm:flex-row'>
