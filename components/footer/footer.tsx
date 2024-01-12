@@ -8,12 +8,12 @@ import GalleryFooter from '@components/footer/gallery-footer';
 const Footer = () => {
     return (
         <footer className='w-full bg-white dark:bg-black px-8 2xl:px-16'>
-            <div className='flex flex-col sm:flex-row justify-center items-center'>
-                <div className="sm:w-1/4 p-3">
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+                <div className="p-3">
                     <h1 className='font-bold text-2xl'>Obaid Gases LLC</h1>
                     <p className='text-sm'>Obaid Gases LLC is a leading supplier of industrial, medical and specialty gases in the United Arab Emirates.</p>
                 </div>
-                <div className="sm:w-1/4 p-3">
+                <div className="p-3">
                     <h1 className="font-bold text-2xl">Safety Guide</h1>
                     <div>
                         <ul className='list-disc list-inside'>
@@ -24,7 +24,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="sm:w-1/4 p-3">
+                <div className="p-3">
                     <h1 className="font-bold text-2xl">About Obaid Gases LLC</h1>
                     <ul className='list-disc list-inside'>
                         <li className='p-2'>About Us</li>
@@ -34,7 +34,7 @@ const Footer = () => {
                         <li className='p-2'>Contact Us</li>
                     </ul>
                 </div>
-                <div className="sm:w-1/4 p-3">
+                <div className="p-3">
                     <h1 className="font-bold text-2xl">Gallery</h1>
                     <div className="flex justify-center items-center">
                         <div className="w-[200px] h-[200px] ">
