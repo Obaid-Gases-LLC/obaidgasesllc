@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Home() {
     return (
         <main className="flex flex-col">
-            <div className='flex justify-center relative w-full sm:h-[750px] md:h-[400px] h-[200px]'>
+            <div className='flex justify-center relative w-full sm:h-[750px] h-[200px]'>
                 <div className='absolute text-center text-white z-[100] font-bold'>
                     <p className='sm:text-2xl mt-5'>Since 2018 </p>
                     <span className='sm:text-4xl'>Best Services & <span>Prices</span></span>
