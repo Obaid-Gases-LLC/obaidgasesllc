@@ -4,6 +4,8 @@ import React from 'react'
 import Link from 'next/link'
 import { Copyright } from 'lucide-react'
 import GalleryFooter from '@components/footer/gallery-footer';
+import { Facebook, Instagram, Linkedin, Mail, MapIcon } from "lucide-react";
+import { SiLinktree, SiWhatsapp } from "react-icons/si";
 
 const Footer = () => {
     return (
@@ -12,6 +14,15 @@ const Footer = () => {
                 <div className="p-3">
                     <h1 className='font-bold text-2xl'>Obaid Gases LLC</h1>
                     <p className='text-sm p-2'>Obaid Gases LLC is a leading supplier of industrial, medical and specialty gases in the United Arab Emirates.</p>
+                    <div className="flex gap-2 items-center justify-center">
+                        <Link href={"https://www.instagram.com/obaid.gases"} ><Instagram scale={2} /></Link>
+                        <Link href={"https://www.facebook.com/people/Obaid-Gases-LLC/61555256337159/"} ><Facebook scale={2} /></Link>
+                        <Link href={"https://www.linkedin.com/company/obaid-gases-llc"} ><Linkedin scale={2} /></Link>
+                        <Link href={"https://maps.app.goo.gl/AwBdFxHf8Ngi2rUN7"} ><MapIcon scale={2} /></Link>
+                        <Link href={"https://linktr.ee/obaid.gases"}> <SiLinktree size={24} /></Link>
+                        <Link href={"https://wa.me/971506388772"}> <SiWhatsapp size={24} /> </Link>
+                        <Link href={"mailto:obaidgases@gmail.com"}> <Mail scale={2} /> </Link>
+                    </div>
                 </div>
                 <div className="p-3">
                     <h1 className="font-bold text-2xl">Safety Guide</h1>
@@ -52,7 +63,7 @@ const Footer = () => {
                 <div className='sm:mt-0 mt-5'>
                     Designed By : 
                     <Link href='https://rahulab.vercel.app'>
-                        <span className='text-gray-500 hover:text-blue-500'>Rahul A B</span>
+                        <span className='text-gray-500 hover:text-blue-500'> Rahul A B</span>
                     </Link>
                 </div>
             </div>
