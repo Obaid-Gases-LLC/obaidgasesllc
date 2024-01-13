@@ -34,7 +34,7 @@ const Navbar = () => {
                         <li className="p-2 hover:text-blue-500"> <Link href={'/products'}>Products</Link> </li>
                         <li className="p-2 hover:text-blue-500"> <Link href={'/faq'}>FAQ</Link> </li>
                         <li className="p-2 hover:text-blue-500"> <Link href={'/contact'}>Contact</Link> </li>
-                        <li className="p-2 hover:text-blue-500"> <Button>Order Now</Button> </li>
+                        <li className="p-2 hover:text-blue-500"> <Link href={'https://wa.me/971506388772'}> <Button>Order Now</Button> </Link> </li> 
                         <li className="p-2"> <ModeToggle /> </li>
                     </ul>
                 </div>
